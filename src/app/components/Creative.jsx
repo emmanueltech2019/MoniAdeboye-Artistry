@@ -51,11 +51,15 @@
 // }
 
 // export default Creative
-
-import React from 'react'
+"use client";
+import React, {useState} from 'react'
 import GlobalContainer from './GlobalContainer'
+import AppointmentModal from './AppointmentModal';
+// import { Link } from 'lucide-react';
+import Link from 'next/link';
 
 const Creative = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <GlobalContainer className={'flex flex-col gap-20 my-20'}>
         {/* Updated Heading based on brand mission */}
@@ -84,12 +88,12 @@ const Creative = () => {
                     <div className="pt-5 border-t border-[#d8d6d0] flex flex-col gap-5">
                         <p className="text-3xl uppercase">Location</p>
                         <div className="flex flex-col gap-2">
-                            <p>09076516441</p>
-                            <p>monisolaadeboye@gmail.com</p>
+                            <Link href="tel:09076516441" className="hover:underline">09076516441</Link>
+                            <Link href="mailto:monisolaadeboye@gmail.com" className="hover:underline">monisolaadeboye@gmail.com</Link>
                             <p>In the heart of Lagos:</p>
                             <p>off university road, Yaba, Lagos.</p>
                         </div>
-                        <button className="py-2 px-10 text-white bg-black hover:bg-neutral-800 transition-colors">
+                        <button className="py-2 px-10 text-white bg-black hover:bg-neutral-800 transition-colors" onClick={() => setIsModalOpen(true)}>
                             Book an appointment
                         </button>
                     </div>
@@ -107,6 +111,11 @@ const Creative = () => {
                 </div>
             </div>
         </div>
+        {/* The Modal */}
+      <AppointmentModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </GlobalContainer>
   )
 }

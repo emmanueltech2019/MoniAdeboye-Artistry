@@ -11,12 +11,12 @@ import Image from 'next/image'
 const FlexImages = () => {
   return (
     <GlobalContainer className={'grid grid-cols-6 gap-5'}>
-        <Image src={flexImage1} width={1000} height={1000} alt='flexImage1' className='w-full h-[15rem] object-cover' />
-        <Image src={flexImage2} width={1000} height={1000} alt='flexImage1' className='w-full h-[15rem] object-cover' />
-        <Image src={flexImage3} width={1000} height={1000} alt='flexImage1' className='w-full h-[15rem] object-cover' />
-        <Image src={flexImage4} width={1000} height={1000} alt='flexImage1' className='w-full h-[15rem] object-cover' />
-        <Image src={flexImage5} width={1000} height={1000} alt='flexImage1' className='w-full h-[15rem] object-cover' />
-        <Image src={flexImage6} width={1000} height={1000} alt='flexImage1' className='w-full h-[15rem] object-cover' />
+        <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100528/Web_3_y8wbsl.jpg"} width={1000} height={1000} alt='flexImage1' className='w-full h-[15rem] object-cover' />
+        <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_8_wofgam.jpg"} width={1000} height={1000} alt='flexImage1' className='w-full h-[15rem] object-cover' />
+        <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100535/Web_11_xiu5it.jpg"} width={1000} height={1000} alt='flexImage1' className='w-full h-[15rem] object-cover' />
+        <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100538/Web_dt7dyn.jpg"} width={1000} height={1000} alt='flexImage1' className='w-full h-[15rem] object-cover' />
+        <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100539/Web_12_gmfwip.jpg"} width={1000} height={1000} alt='flexImage1' className='w-full h-[15rem] object-cover' />
+        <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100536/Website_1_r76udd.jpg"} width={1000} height={1000} alt='flexImage1' className='w-full h-[15rem] object-cover' />
     </GlobalContainer>
   )
 }

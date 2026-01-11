@@ -12,6 +12,7 @@ import Creative from "./components/Creative";
 import FlexImages from "./components/FlexImages";
 import Appointment from "./components/Appointment";
 import Footer from "./components/Footer";
+import BookingWidget from "./components/BookingWidget";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <FlexImages />
       <Appointment />
       <Footer />
+      <BookingWidget/>
     </div>
   );
 }

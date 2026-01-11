@@ -15,7 +15,7 @@ const WhatYouShouldKnow = () => {
             </div> */}
         </GlobalContainer>
         <div className="w-full h-[30rem] mb-20" style={{
-            backgroundImage: `url(${fixedBackground.src})`,
+            backgroundImage: `url(https://res.cloudinary.com/wise-solution-inc/image/upload/v1768128970/bakedbyene_1768128939717_ndmbyx.jpg)`,
             backgroundAttachment: 'fixed', 
             backgroundPosition: 'center', 
             backgroundSize: 'cover', 

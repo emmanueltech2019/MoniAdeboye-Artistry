@@ -9,8 +9,8 @@ const Footer = () => {
             <div className="flex flex-col md:gap-10 gap-5">
                 <span className="md:text-3xl text-xl">CONTACTS</span>
                 <div className="flex flex-col gap-2">
-                    <p>09076516441 </p>
-                    <p>monisolaadeboye@gmail.com</p>
+                    <Link href="tel:09076516441" className="hover:underline">09076516441 </Link>
+                    <Link href="mailto:monisolaadeboye@gmail.com" className="hover:underline">monisolaadeboye@gmail.com</Link>
                 </div>
             </div>
             <div className="flex flex-col md:gap-10 gap-5">
