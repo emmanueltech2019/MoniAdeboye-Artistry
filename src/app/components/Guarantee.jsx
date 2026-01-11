@@ -1,5 +1,5 @@
 import React from 'react'
-import guarantee from '@/images/guarantee.png'
+import guarantee from '@/images/eight.jpg'
 import GlobalContainer from './GlobalContainer'
 
 const Guarantee = () => {

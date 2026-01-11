@@ -2,7 +2,7 @@ import React from 'react'
 import GlobalContainer from './GlobalContainer'
 import Image from 'next/image'
 import salonBackImage from '@/images/salonBackImage.png'
-import salon from '@/images/salon.png'
+import salon from '@/images/seven.jpg'
 import Link from 'next/link'
 
 const Beautiful = () => {

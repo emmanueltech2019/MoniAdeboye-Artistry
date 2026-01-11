@@ -1,9 +1,9 @@
 import React from 'react'
 import GlobalContainer from './GlobalContainer'
 import Image from 'next/image'
-import beauty from '@/images/beauty.png'
-import nails from '@/images/nails.png'
-import hair from '@/images/hair.png'
+import beauty from '@/images/three.jpg'
+import nails from '@/images/six.jpg'
+import hair from '@/images/four.jpg'
 import Link from 'next/link'
 
 const Beauty = () => {

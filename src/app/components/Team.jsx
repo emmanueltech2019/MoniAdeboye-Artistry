@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import GlobalContainer from './GlobalContainer'
-import mark from '@/images/mark.png'
-import jessica from '@/images/jessica.png'
+import mark from '@/images/nine.jpg'
+import jessica from '@/images/ten.jpg'
 
 const Team = () => {
   return (
@@ -16,7 +16,7 @@ const Team = () => {
                         <p className='underline'>Meet the team</p>
                     </div>
                     <div className="flex items-end gap-3">
-                        <Image src={mark} width={1000} height={1000} alt='mark' className='w-[70%]' />
+                        <Image src={mark} width={1000} height={1000} alt='mark' className='w-[70%] saturate-0' />
                         <div className="flex flex-col gap-3">
                             <p className='text-xl'>MARK HARRIS</p>
                             <span className="text-sm">Owner & Senior Stylist</span>
@@ -27,7 +27,7 @@ const Team = () => {
                     <p>. Artists</p>
                     <p className="text-xl">Our Coiffure team comprises stylists with 10+ years of experience. Highly trained and skilled stylist ready to serve you every day.</p>
                     <div className="flex items-end gap-3 mt-auto">
-                        <Image src={jessica} width={1000} height={1000} alt='mark' className='w-[70%]' />
+                        <Image src={jessica} width={1000} height={1000} alt='mark' className='w-[70%] saturate-0' />
                         <div className="flex flex-col gap-3">
                             <p className='text-xl'>MARK HARRIS</p>
                             <span className="text-sm">Owner & Senior Stylist</span>
