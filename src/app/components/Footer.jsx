@@ -1,5 +1,6 @@
 import React from 'react'
 import GlobalContainer from './GlobalContainer'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -8,25 +9,26 @@ const Footer = () => {
             <div className="flex flex-col md:gap-10 gap-5">
                 <span className="md:text-3xl text-xl">CONTACTS</span>
                 <div className="flex flex-col gap-2">
-                    <p>+1800_356_8933</p>
-                    <p>example@gmail.com</p>
+                    <p>09076516441 </p>
+                    <p>monisolaadeboye@gmail.com</p>
                 </div>
             </div>
             <div className="flex flex-col md:gap-10 gap-5">
                 <span className="md:text-3xl text-xl">LOCATION</span>
                 <div className="flex flex-col gap-2">
-                    <p>758 5th Avenue</p>
-                    <p>In the heart of NYC</p>
+                    {/* <p>758 5th Avenue</p> */}
+                    <p>off university road, Yaba, Lagos.</p>
                 </div>
             </div>
             <div className="flex flex-col md:gap-10 gap-5">
                 <span className="md:text-3xl text-xl">SOCIAL</span>
                 <div className="flex flex-col gap-2">
-                    <p>Instagram Facebook</p>
+                    <p><Link href="https://www.instagram.com/moniadeboye_mua/">Instagram</Link> <br/>
+                    <Link href="https://web.facebook.com/profile.php?id=100067548947007">Facebook</Link></p>
                 </div>
             </div>
         </div>
-        <p className="text-sm">&copy; 2026 VAMTAM. ALL RIGHT RESERVED. TERMS PRIVACY</p>
+        <p className="text-sm">&copy; 2026 <Link href="https://devemmy.com">devemmy.com</Link>. ALL RIGHT RESERVED. TERMS PRIVACY</p>
     </GlobalContainer>
   )
 }
