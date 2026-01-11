@@ -11,6 +11,7 @@ import WhatYouShouldKnow from "./components/WhatYouShouldKnow";
 import Creative from "./components/Creative";
 import FlexImages from "./components/FlexImages";
 import Appointment from "./components/Appointment";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <Creative />
       <FlexImages />
       <Appointment />
+      <Footer />
     </div>
   );
 }

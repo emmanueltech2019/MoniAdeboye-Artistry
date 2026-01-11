@@ -11,7 +11,7 @@ const Appointment = () => {
                 <ArrowRight strokeWidth={1} className='rotate-40' size={60} color='white' />
             </div>
         </div>
-        <div className="flex md:flex-row flex-col justify-between w-full md:items-center gap-3">
+        <div className="flex md:flex-row flex-col justify-between w-full md:items-center md:gap-3 gap-10">
             <p className='md:w-1/2 text-2xl'>BECOME PART OF OUR BEAUTY COMMUNITY WITH EXCLUSIVE ACCESS TO SPECIAL OFFERS AND LATEST NEWS</p>
             <div className="flex gap-2 w-full justify-end">
                 <input type="email" className='hover:border hover:border-black outline-none border border-[#d8d6d0] md:w-1/2 w-full' />
