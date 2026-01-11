@@ -5,10 +5,10 @@ import hoursBackground from '@/images/hoursBackground.png'
 const Creative = () => {
   return (
     <GlobalContainer className={'flex flex-col gap-20 my-20'}>
-        <h6 className="text-5xl">HOME TO THE BOROUGH'S MOST <br /> CREATIVE HAIR STYLISTS</h6>
+        <h6 className="md:text-5xl text-3xl">HOME TO THE BOROUGH'S MOST <br /> CREATIVE HAIR STYLISTS</h6>
         <div className="border-t border-[#d8d6d0] py-5 fle flex-col gap-10">
             <p>.Location & Hours</p>
-            <div className="grid grid-cols-[4fr_8fr] mt-5">
+            <div className="grid md:grid-cols-[4fr_8fr] mt-5">
                 <div className="p-10 bg-[#eeebe2] flex flex-col gap-5">
                     <p className="text-3xl">HOURS</p>
                     <div className="flex flex-col gap-2">

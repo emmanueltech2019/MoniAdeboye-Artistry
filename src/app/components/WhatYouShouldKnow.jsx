@@ -6,7 +6,7 @@ const WhatYouShouldKnow = () => {
   return (
     <>
         <GlobalContainer className={'flex flex-col gap-10'}>
-            <h6 className="text-6xl">
+            <h6 className="md:text-6xl text-3xl">
                 BALAYAGE, OMBRE, AND SOMBRE: <br /> WHAT YOU SHOULD KNOW
             </h6>
             <div className="flex justify-between items-center border-t border-[#d8d6d0] py-5">

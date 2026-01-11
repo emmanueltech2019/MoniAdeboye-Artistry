@@ -9,9 +9,9 @@ import Link from 'next/link'
 const Beauty = () => {
   return (
     <GlobalContainer className={'py-30 relative'}>
-        <h2 className='text-7xl mb-10'>WE'VE GOT YOUR BEAUTY <br /> NEEDS COVERED</h2>
+        <h2 className='md:text-7xl text-4xl mb-10'>WE'VE GOT YOUR BEAUTY <br /> NEEDS COVERED</h2>
         <div className="grid md:grid-cols-[3fr_9fr] border-t border-[#d8d6d0] py-5">
-            <p>. Our Services</p>
+            <p className='pb-5'>. Our Services</p>
             <div className="flex flex-col gap-10">
                 <div className="grid md:grid-cols-3 gap-10">
                     <div className="flex flex-col gap-3">

@@ -7,8 +7,8 @@ import Link from 'next/link'
 
 const Beautiful = () => {
   return (
-    <GlobalContainer className={'py-30 relative'}>
-        <h2 className='text-7xl mb-10'>BEAUTIFUL HAIR ? IT IS EASY <br /> AND WONDERFUL!</h2>
+    <GlobalContainer className={'md:py-30 relative'}>
+        <h2 className='md:text-7xl text-4xl mb-10'>BEAUTIFUL HAIR ? IT IS EASY <br /> AND WONDERFUL!</h2>
         <div className="flex flex-col border-t border-[#d8d6d0] py-10 gap-10">
             <p>. The Salon</p>
             <div className="grid md:grid-cols-2 gap-10">

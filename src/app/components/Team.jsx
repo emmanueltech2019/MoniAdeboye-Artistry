@@ -7,9 +7,9 @@ import jessica from '@/images/jessica.png'
 const Team = () => {
   return (
     <GlobalContainer className='my-20 flex flex-col gap-10'>
-        <h4 className='text-5xl w-1/2'>TEAM OF HIGHLY TRAINED & SKILLED STYLISTS</h4>
+        <h4 className='md:text-5xl md:w-1/2 text-3xl'>TEAM OF HIGHLY TRAINED & SKILLED STYLISTS</h4>
         <div className="border-t border-[#d8d6d0] py-5">
-            <div className="grid grid-cols-2">
+            <div className="grid md:grid-cols-2">
                 <div className="flex flex-col gap-20">
                     <p>. Artists</p>
                     <div className="flex flex-col gap-10">
