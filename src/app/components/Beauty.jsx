@@ -15,15 +15,15 @@ const Beauty = () => {
             <div className="flex flex-col gap-10">
                 <div className="grid md:grid-cols-3 gap-10">
                     <div className="flex flex-col gap-3">
-                        <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100537/Web_5_zilckz.jpg"} width={1000} height={1000} alt='hair' className='md:h-100' />
+                        <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100537/Web_5_zilckz.jpg"} width={1000} height={1000} alt='hair' className='md:h-100 object-cover' />
                         <span className="text-xl">Bridal makeup</span>
                     </div>
                     <div className="flex flex-col gap-3">
-                        <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_vratey.jpg"} width={1000} height={1000} alt='beauty' className='md:h-100' />
+                        <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_vratey.jpg"} width={1000} height={1000} alt='beauty' className='md:h-100 object-cover' />
                         <span className="text-xl">Editorial and photoshoot makeup</span>
                     </div>
                     <div className="flex flex-col gap-3">
-                        <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100536/Website_1_r76udd.jpg"} width={1000} height={1000} alt='hair' className='md:h-100' />
+                        <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100536/Website_1_r76udd.jpg"} width={1000} height={1000} alt='hair' className='md:h-100 object-cover' />
                         <span className="text-xl">Event and party makeup</span>
                     </div>
                 </div>
@@ -46,6 +46,111 @@ const Beauty = () => {
                             <span>₦70,000</span>
                             <span>Makeup Training </span>
                             <span>₦120,000</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>DIY Makeup class</span>
+                            <span>₦60,000</span>
+                            <span>4Hours</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Walk-in Session</span>
+                            <span>₦35,000</span>
+                            <span>75 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Walk-in Session + Gele (by the makeup artist)</span>
+                            <span>₦40,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Walk-in Session + Gele (professional ele artist)</span>
+                            <span>₦50,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Yaba</span>
+                            <span>₦55,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Surulere</span>
+                            <span>₦60,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Ikeja</span>
+                            <span>₦65,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Maryland</span>
+                            <span>₦65,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Lekki 1</span>
+                            <span>₦80,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Ikate / Osapa London</span>
+                            <span>₦90,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Chevron / Lekki 2</span>
+                            <span>₦100,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - VGC</span>
+                            <span>₦100,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Ago</span>
+                            <span>₦70,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - FESTAC</span>
+                            <span>₦70,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Ojodu Berger</span>
+                            <span>₦70,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Ilupeju</span>
+                            <span>₦65,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Gbagada</span>
+                            <span>₦60,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Agege</span>
+                            <span>₦100,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Ebute Meta</span>
+                            <span>₦60,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Magodo</span>
+                            <span>₦70,000</span>
+                            <span>90 Minutes</span>
+                        </div>
+                        <div className="grid grid-cols-4 ">
+                            <span>Home Session - Ogudu</span>
+                            <span>₦70,000</span>
+                            <span>90 Minutes</span>
                         </div>
                     </div>
                 </div>

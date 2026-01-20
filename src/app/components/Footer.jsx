@@ -24,7 +24,7 @@ const Footer = () => {
                 <span className="md:text-3xl text-xl">SOCIAL</span>
                 <div className="flex flex-col gap-2">
                     <p><Link href="https://www.instagram.com/moniadeboye_mua/">Instagram</Link> <br/>
-                    <Link href="https://web.facebook.com/profile.php?id=100067548947007">Facebook</Link></p>
+                    <Link href="https://web.facebook.com/profile.php?id=100067548947007">TikTok</Link></p>
                 </div>
             </div>
         </div>

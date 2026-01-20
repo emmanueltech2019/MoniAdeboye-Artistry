@@ -4,3 +4,7 @@ body{
     background-color: #fefcf5;
     overflow-x: hidden;
 }
+
+.clip{
+    clip-path: inset(0 0 100% 0);
+}

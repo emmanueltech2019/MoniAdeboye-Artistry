@@ -38,11 +38,11 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
-import logo from '@/images/logo4.png';
+import logo from '@/images/Monisola.png';
 import Link from 'next/link';
 import AppointmentModal from './AppointmentModal';
 
-const Navbar = () => {
+const Navbar = ({className}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -56,8 +56,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="p-8 md:px-12 py-6 border-b border-[#b0b0b0] w-full flex justify-between items-center fixed top-0 left-0 z-50 bg-white/90 backdrop-blur-sm">
-        <Image src={logo} width={220} height={40} alt="logo" className="w-auto h-10" />
+      <nav className={`p-8 md:px-12 py-6 border-b border-[#b0b0b0] w-full flex justify-between items-center fixed top-0 left-0 z-50 bg-white/90 backdrop-blur-sm ${className}`}>
+        <Image src={logo} width={1000} height={1000} alt="logo" className="w-20" />
         
         <ul className="gap-8 items-center hidden md:flex text-sm uppercase tracking-widest font-light">
           {navLinks.map((link) => (
@@ -95,12 +95,12 @@ const Navbar = () => {
             backgroundRepeat: 'no-repeat', 
         }}>
           
-          <div className="md:hidden flex flex-col gap-8 mb-12 bg-black">
+          <div className="md:hidden flex flex-col gap-8 mb-12 bg-black text-white">
              {navLinks.map((link) => (
                 <Link 
                   key={link.name} 
                   href={link.href} 
-                  className="text-2xl font-serif uppercase tracking-widest border-b border-gray-100 pb-2"
+                  className="text-2xl font-serif uppercase tracking-widest border-b border-gray-100 pb-2 px-3"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
@@ -111,25 +111,23 @@ const Navbar = () => {
           <div className="space-y-12 text-left">
             <section>
               <h4 className="text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-6">Contacts</h4>
+              <Link href="mailto:monisolaadeboye@gmail.com" className="hover:underline">monisolaadeboye@gmail.com</Link> <br />
               <Link href="tel:09076516441" className="hover:underline">09076516441 </Link>
-              <Link href="mailto:monisolaadeboye@gmail.com" className="hover:underline">monisolaadeboye@gmail.com</Link>
 
             </section>
 
             <section>
               <h4 className="text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-6">Hours</h4>
               <div className="text-sm space-y-1 font-light">
-                <p>Mon to Fri: 7:30 am — 1:00 am</p>
-                <p>Sat: 9:00 am — 1:00 am</p>
-                <p>Sun: 9:00 am — 11:30 pm</p>
+                <p>Mon to Sat: 8:00am — 7:00pm</p>
+                <p>Sun: 2:00pm — 7:00pm</p>
               </div>
             </section>
 
             <section>
               <h4 className="text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-6">Location</h4>
               <p className="text-sm font-light leading-relaxed">
-                In the heart of Lagos:<br />
-               <p>off university road, Yaba, Lagos.</p>
+                Yaba, Lagos.
               </p>
             </section>
 
