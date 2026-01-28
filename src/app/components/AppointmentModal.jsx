@@ -1,7 +1,38 @@
 
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 
 const AppointmentModal = ({ isOpen, onClose }) => {
+  const [getPrice, setGetPrice] = useState(0)
+  const prices = [
+    { name: "Bridal makeup", price: 30000 },
+    { name: "Editorial and photoshoot makeup", price: 30000 },
+    { name: "Event and party makeup", price: 30000 },
+    { name: "Makeup for film and TV", price: 30000 },
+    { name: "Personal makeup classes (self-application)", price: 70000 },
+    { name: "Makeup Training", price: 120000 },
+    { name: "DIY Makeup class (4 Hours)", price: 60000 },
+    { name: "Walk-in Session (75 Minutes)", price: 35000 },
+    { name: "Walk-in Session + Gele (by the makeup artist) (90 Minutes)", price: 40000 },
+    { name: "Walk-in Session + Gele (professional Gele artist) (90 Minutes)", price: 50000 },
+    { name: "Home Session - Yaba (90 Minutes)", price: 55000 },
+    { name: "Home Session - Surulere (90 Minutes)", price: 60000 },
+    { name: "Home Session - Ikeja (90 Minutes)", price: 65000 },
+    { name: "Home Session - Maryland (90 Minutes)", price: 65000 },
+    { name: "Home Session - Lekki 1 (90 Minutes)", price: 80000 },
+    { name: "Home Session - Ikate / Osapa London (90 Minutes)", price: 90000 },
+    { name: "Home Session - Chevron / Lekki 2 (90 Minutes)", price: 100000 },
+    { name: "Home Session - VGC (90 Minutes)", price: 100000 },
+    { name: "Home Session - Ago (90 Minutes)", price: 70000 },
+    { name: "Home Session - FESTAC (90 Minutes)", price: 70000 },
+    { name: "Home Session - Ojodu Berger (90 Minutes)", price: 70000 },
+    { name: "Home Session - Ilupeju (90 Minutes)", price: 65000 },
+    { name: "Home Session - Gbagada (90 Minutes)", price: 60000 },
+    { name: "Home Session - Agege (90 Minutes)", price: 100000 },
+    { name: "Home Session - Ebute Meta (90 Minutes)", price: 60000 },
+    { name: "Home Session - Magodo (90 Minutes)", price: 70000 },
+    { name: "Home Session - Ogudu (90 Minutes)", price: 70000 }
+  ];
   if (!isOpen) return null;
 
   return (
@@ -40,6 +71,21 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               <input type="text" placeholder="Date" className="w-full border border-gray-300 p-3 outline-none focus:border-black" />
               <input type="text" placeholder="Time" className="w-full border border-gray-300 p-3 outline-none focus:border-black" />
             </div>
+          </div>
+          <div className="grid md:grid-cols-2 gap-5">
+            <select onChange={(e) => {
+              const filteredValue = prices.find(p => p.name === e.target.value);
+              setGetPrice(filteredValue ? filteredValue.price : 0)
+            }} name="services" id="services" className='w-full outline-none border border-gray-300 p-3'>
+              <option value="">Select a service</option>
+              {prices.map((price, index) => (
+                <option key={index} value={price.name}>{price.name}</option>
+              ))}
+            </select>
+            <input type="text" className='p-3 outline-none border border-gray-300' readOnly value={'₦'+getPrice.toLocaleString(undefined, {
+              maximumFractionDigits: 2, 
+              minimumFractionDigits: 2
+            })} />
           </div>
           <button className="mt-6 bg-[#1A1A1A] text-white px-10 py-4 text-sm uppercase tracking-widest hover:bg-black transition-colors">
             Book an appointment

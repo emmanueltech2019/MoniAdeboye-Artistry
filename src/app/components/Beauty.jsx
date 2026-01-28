@@ -11,7 +11,7 @@ const Beauty = () => {
     <GlobalContainer className={'py-30 relative'}>
         <h2 className='md:text-7xl text-4xl mb-10'>MEET THE ARTIST</h2>
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-5 md:-mb-30 mb-5">
-            <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_9_qyvboq.jpg"} alt="Moni Adeboye Artistry Logo" width={1000} height={1000} className="w-full h-[100%] object-cover flex-shrink-0 md:-mb-0 -mb-40" />
+            <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_9_qyvboq.jpg"} alt="Moni Adeboye Artistry Logo" width={1000} height={1000} className="w-full md:h-[60%] h-[100%] object-cover object-center flex-shrink-0 md:-mb-0 -mb-40" />
             <div className="flex flex-col gap-3">
                 <p>Hi, I'm <b>Moni Adeboye</b>, the Head Artist at Moni Adeboye Artistry. My work is centered on creating clean, lightweight, skin-focused makeup that enhances natural beauty and allows each client to feel confident, polished, and at ease.</p>
                 <p>I believe makeup should feel personal, Every face, occasion, and vision is different, and my approach is always tailored - whether I'm working with a client or teaching. Alongside my artistry, I offer makeup training for both personal and professional use, designed to build confidence, refine technique, and help individuals truly understand their craft.</p>
@@ -36,7 +36,7 @@ const Beauty = () => {
                         <span className="text-xl">Event and party makeup</span>
                     </div>
                 </div>
-                <div className="border-y py-5 border-[#d8d6d0]">
+                {/* <div className="border-y py-5 border-[#d8d6d0]">
                     <div className="flex flex-col gap-10">
                         <div className="grid grid-cols-4">
                             <span>Bridal makeup</span>
@@ -163,7 +163,7 @@ const Beauty = () => {
                         </div>
                     </div>
                 </div>
-                <Link href={''}>View all services & pricing</Link>
+                <Link href={''}>View all services & pricing</Link> */}
             </div>
         </div>
     </GlobalContainer>
