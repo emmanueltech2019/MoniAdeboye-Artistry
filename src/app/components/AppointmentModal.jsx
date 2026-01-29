@@ -104,7 +104,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
   const [selectedService, setSelectedService] = useState(null);
 
   // Update this with your actual WhatsApp phone number (include country code, no '+')
-  const whatsappNumber = "2348125510572"; 
+  const whatsappNumber = "+2348104505065"; 
   const contactEmail = "hello@moniadeboyeartistry.com";
 
   const serviceCategories = {
