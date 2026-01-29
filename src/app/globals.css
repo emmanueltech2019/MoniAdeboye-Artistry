@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 @import "tailwindcss";
 
 body{
@@ -10,6 +10,12 @@ body{
     clip-path: inset(0 0 100% 0);
 }
 
+<<<<<<< HEAD
 @theme{
   --font-philosopher: "Philosopher", sans-serif;
+=======
+* {
+  font-family: "Belleza", sans-serif;
+  color: #333333;
+>>>>>>> 6596ab912bf857b609c5812d967bd43f7b019316
 }

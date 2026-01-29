@@ -45,7 +45,7 @@ const Guarantee = () => {
 
       {/* Content Layer */}
       <GlobalContainer className={'flex flex-col md:gap-40 gap-5 items-start w-full md:w-1/2 absolute top-1/2 -translate-y-1/2 left-0 z-10'}>
-          <h3 className='text-3xl font-medium text-white'>
+          <h3 className='text-3xl font-medium text-white' style={{color:"#fff !important"}}>
             WE CAN GUARANTEE YOU HAVE NEVER RECEIVED AS MANY COMPLIMENTS AS YOU WILL, AFTER YOU BOOK A VISIT WITH US.
           </h3>
           <button className='py-3 px-10 bg-white text-black font-bold hover:bg-black hover:text-white transition-colors'>

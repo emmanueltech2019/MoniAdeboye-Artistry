@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <GlobalContainer className='flex flex-col gap-50 py-20 border-t border-[#d8d6d0]'>
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-3 gap-5 hidden">
             <div className="flex flex-col md:gap-10 gap-5">
                 <span className="md:text-3xl text-xl">CONTACTS</span>
                 <div className="flex flex-col gap-2">

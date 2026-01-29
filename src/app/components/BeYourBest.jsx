@@ -4,7 +4,7 @@ const BeYourBest = () => {
   return (
     <div className='md:flex hidden flex-col gap-5 relative'>
         <span className='text-7xl'>BE YOUR BEST.</span>
-        <span className='text-7xl ms-auto'>WE'RE ALWAYS HERE</span>
+        <span className='text-7xl ms-auto'>WE&apos;RE ALWAYS HERE</span>
     </div>
   )
 }
