@@ -14,6 +14,7 @@ import Appointment from "./components/Appointment";
 import Footer from "./components/Footer";
 import BookingWidget from "./components/BookingWidget";
 
+
 export default function Home() {
   return (
     <div>
