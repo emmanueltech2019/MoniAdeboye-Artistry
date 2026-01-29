@@ -29,10 +29,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${philosopher.variable} ${geistMono.variable} antialiased`}
       >
-                <Navbar className={'top-translate'} />
-
+          <Navbar className={'top-translate'} />
         {children}
         <Footer />
         <BookingWidget/>
