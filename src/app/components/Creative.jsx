@@ -88,10 +88,10 @@ const Creative = () => {
                     <div className="pt-5 border-t border-[#d8d6d0] flex flex-col gap-5">
                         <p className="text-3xl uppercase">Location</p>
                         <div className="flex flex-col gap-2">
-                            <Link href="tel:09076516441" className="hover:underline">09076516441</Link>
                             <Link href="mailto:monisolaadeboye@gmail.com" className="hover:underline">monisolaadeboye@gmail.com</Link>
+                            <Link href="tel:09076516441" className="hover:underline">09076516441</Link>
                             <p>In the heart of Lagos:</p>
-                            <p>off university road, Yaba, Lagos.</p>
+                            <p>Yaba, Lagos</p>
                         </div>
                         <button className="py-2 px-10 text-white bg-black hover:bg-neutral-800 transition-colors" onClick={() => setIsModalOpen(true)}>
                             Book an appointment

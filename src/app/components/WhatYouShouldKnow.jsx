@@ -7,7 +7,7 @@ const WhatYouShouldKnow = () => {
     <>
         <GlobalContainer className={'flex flex-col gap-10'}>
             <h6 className="md:text-6xl text-3xl">
-                BEAUTY INSIGHTS & ARTISTRY TIPS <br /> ARTISTRY ENHANCES NATURAL FEATURES.
+                {/* BEAUTY INSIGHTS & ARTISTRY TIPS <br /> ARTISTRY ENHANCES NATURAL FEATURES. */}
             </h6>
             {/* <div className="flex justify-between items-center border-t border-[#d8d6d0] py-5">
                 <p>.Blog</p>
