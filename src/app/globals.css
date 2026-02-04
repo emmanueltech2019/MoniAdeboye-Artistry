@@ -10,12 +10,3 @@ body{
     clip-path: inset(0 0 100% 0);
 }
 
-<<<<<<< HEAD
-@theme{
-  --font-philosopher: "Philosopher", sans-serif;
-=======
-* {
-  font-family: "Belleza", sans-serif;
-  color: #333333;
->>>>>>> 6596ab912bf857b609c5812d967bd43f7b019316
-}

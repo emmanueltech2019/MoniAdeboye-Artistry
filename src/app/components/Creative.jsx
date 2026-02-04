@@ -63,7 +63,7 @@ const Creative = () => {
   return (
     <GlobalContainer className={'flex flex-col gap-20 my-20'}>
         {/* Updated Heading based on brand mission */}
-        <h6 className="md:text-5xl text-3xl uppercase">
+        <h6 className="md:text-5xl text-3xl uppercase" style={{color:"#d0813c"}}>
             Home to sophisticated <br /> and elegant artistry
         </h6>
         <div className="border-t border-[#d8d6d0] py-5 flex flex-col gap-10">
@@ -73,16 +73,16 @@ const Creative = () => {
                     <p className="text-3xl">HOURS</p>
                     <div className="flex flex-col gap-2">
                         <div className="flex justify-between items-center">
-                            <p>Monday - Friday</p>
+                            <p>Monday - Saturday</p>
                             <span>8:00AM - 7:00PM</span>
                         </div>
-                        <div className="flex justify-between items-center">
+                        {/* <div className="flex justify-between items-center">
                             <p>Saturday</p>
                             <span>8:00AM - 5:00PM</span>
-                        </div>
+                        </div> */}
                         <div className="flex justify-between items-center">
                             <p>Sunday</p>
-                            <span>8:00AM - 3:00PM</span>
+                            <span>2:00PM - 7:00PM</span>
                         </div>
                     </div>
                     <div className="pt-5 border-t border-[#d8d6d0] flex flex-col gap-5">
@@ -90,10 +90,10 @@ const Creative = () => {
                         <div className="flex flex-col gap-2">
                             <Link href="mailto:monisolaadeboye@gmail.com" className="hover:underline">monisolaadeboye@gmail.com</Link>
                             <Link href="tel:09076516441" className="hover:underline">09076516441</Link>
-                            <p>In the heart of Lagos:</p>
+                            {/* <p>In the heart of Lagos:</p> */}
                             <p>Yaba, Lagos</p>
                         </div>
-                        <button className="py-2 px-10 text-white bg-black hover:bg-neutral-800 transition-colors" onClick={() => setIsModalOpen(true)}>
+                        <button className="py-2 px-10 text-white bg-[#d0813c] hover:bg-neutral-800 transition-colors" onClick={() => setIsModalOpen(true)} style={{color: 'white'}}>
                             Book an appointment
                         </button>
                     </div>
