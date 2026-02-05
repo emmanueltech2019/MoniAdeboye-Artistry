@@ -11,29 +11,29 @@ const page = () => {
               <p className="font-sans md:px-56 text-center text-[18px]">Everything we do at Moni Adeboye is motivated by our commitment to discovering and shaping the story you want to tell through your personal style.</p>
           </div>
       </GlobalContainer>
-      <Image width={1000} height={1000} alt='image' className='w-full' src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/benyamin-bohlouli-dDhWJLXEZ5I-unsplash-scaled.jpg'} />
+      <Image width={1000} height={1000} alt='image' className='w-full' src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1770254374/image_16_i0rlsl.png'} />
       <GlobalContainer className="grid md:grid-cols-2 grid-cols-1 gap-10 md:w-[80%] mx-auto w-full mb-20 pt-40 border-b border-gray-300">
           <div className='flex flex-col justify-between items-center w-full  gap-5'>
-              <h1 className="md:text-5xl text-2xl font-philosopher">THE BEGINING</h1>
+              <h1 className="md:text-5xl text-2xl font-philosopher">My Mission</h1>
               <Image width={1000} height={1000} alt='image' className='w-40' src={'https://coiffure.vamtam.com/wp-content/uploads/2023/01/GettyImages-1317331156.svg'} />
               <p className="font-sans md:px-56 text-center text-[18px]"></p>
           </div>
-          <p className='md:text-lg'>Their vision first came to life in the vibrant Manhattan district in 2004, where the two owners had a art gallery and hair salon space so they could experiment freely and hone their craft. <br /> <br />
-          The first Moni Adeboye had no sign, website, email, or business cards: John and Jen attracted clients by word-of-mouth. They earned a reputation for their unique, hyper-personalized haircuts.
+          <p className='md:text-lg'>I believe makeup should enhance, not mask. My mission is to deliver flawless, natural glam that celebrates individuality. With attention to detail, professionalism, and a client-first approach, I aim to help women see the best version of themselves — and step into every moment with confidence.
+
           </p>
       </GlobalContainer>
       <GlobalContainer className={'grid md:grid-cols-2 grid-cols-1'}>
-        <Image width={1000} height={1000} alt='image' className='w-full' src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/pexels-cottonbro-studio-7440131.jpg'} />
+        <Image width={1000} height={1000} alt='image' className='w-full' src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100536/Website_1_r76udd.jpg'} />
         <div className='flex flex-col gap-10 justify-center md:px-20'>
-          <h2 className='md:text-5xl text-2xl font-philosopher'>OUR APPROACH</h2>
-          <p className='md:text-lg text-md'>At Moni Adeboye, we are in love with our craft and are passionate about using it to express individuality. We believe we all have something about us that is unique and worthy of being seen.</p>
-          <p className='md:text-lg text-md'>Everything we do at Moni Adeboye is motivated by our commitment to discovering and shaping the story you want to tell through your personal style.</p>
+          <h2 className='md:text-5xl text-2xl font-philosopher'>Brand Story</h2>
+          <p className='md:text-lg text-md'>My journey began with a passion for beauty. I started out self-taught, practicing on myself and friends, before going through professional training to refine my artistry. What began as something I loved has now grown into a career where I not only serve clients but also share my knowledge with others who want to learn makeup for personal or professional use.
+</p>
           <button className='p-4 bg-black text-white'>Book an appointment</button>
         </div>
       </GlobalContainer>
       <GlobalContainer className={'grid md:grid-cols-2 grid-cols-1 my-40 items-center'}>
         <h3 className='md:text-5xl text-3xl font-philosopher'>OUR FOCUS</h3>
-        <p className='md:text-xl font-semibold'>Our top priority is making you feel bautiful for who you are: Neurodiverse and non-binary clients of all ages, genders, ethnicities, and backgrounds are celebrated here. We want to frame your best features, not fit you in to a box.</p>
+        <p className='md:text-xl font-semibold'>My portfolio features a variety of work across bridal, editorial, casual glam, events, and film/TV. It reflects the versatility of my artistry as well as the skin-focused glam style that defines my brand. </p>
       </GlobalContainer>
       {/* <div className='relative flex flex-col gap-5'>
         <GlobalContainer className={'relative'}>

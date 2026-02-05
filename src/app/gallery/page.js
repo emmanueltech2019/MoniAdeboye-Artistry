@@ -21,18 +21,18 @@ export default function page() {
                 <p className="font-sans md:px-56 text-center text-[18px]">Take a look at just a few brand new looks we've created for our happy clients</p>
             </div>
             <div className="columns-2 md:columns-3 items-start space-y-5">
-                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/autri-taheri-_PYj9cbIpIw-unsplash-1.jpg'} />
-                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/alexander-grey-ORCPTrkkezw-unsplash.jpg'} />
-                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/jessie-dee-dabrowski-www-jessiedee-net-W6cwaL7PMSw-unsplash-1.jpg'} />
-                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/kareya-saleh-tLKOj6cNwe0-unsplash-1.jpg'} />
-                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/pexels-cottonbro-studio-7440131-1.jpg'} />
-                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/pexels-chloe-1321916.jpg'} />
-                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/pexels-element-digital-973403-1.jpg'} />
-                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/pexels-neosiam-1084719-1.jpg'} />
-                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/pexels-engin-akyurt-3065207.jpg'} />
-                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/pexels-koolshooters-7142792-1-1.jpg'} />
-                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/valeriia-kogan-CIrRI0ujiRo-unsplash-1-1.jpg'} />
-                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/pexels-maria-lindsey-content-creator-1536356.jpg'} />
+                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1768103805/560661079_18238893982295532_250446624367988961_n_fdgc7p.jpg'} />
+                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://res.cloudinary.com/wise-solution-inc/video/upload/v1768100541/Web_9_pkwgpn.mov'} />
+                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100539/Web_12_gmfwip.jpg'} />
+                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100538/Web_dt7dyn.jpg'} />
+                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100536/Website_1_r76udd.jpg'} />
+                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100537/Web_5_zilckz.jpg'} />
+                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100535/Web_11_xiu5it.jpg'} />
+                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_vratey.jpg'} />
+                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_9_qyvboq.jpg'} />
+                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_8_wofgam.jpg'} />
+                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_8_wofgam.jpg'} />
+                <Image className="break-inside-avoid" width={1000} height={1000} alt="image" src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100529/Web_4_i24pnq.jpg'} />
             </div>
       </GlobalContainer>
       <Appointment />
