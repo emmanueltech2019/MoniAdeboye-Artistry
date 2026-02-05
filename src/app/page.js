@@ -81,7 +81,7 @@ export default function Home() {
       </div>
       <div>
         {/* <Navbar className={'top-translate'} /> */}
-        <div className="h-screen w-full relative trigger-this">
+        <div className="h-screen w-full relative trigger-this hidden">
             <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_vratey.jpg"} width={1000} height={1000} alt='background' className='w-full h-full absolute opacity-50 top-0 left-0 object-cover' />
             <GlobalContainer className={'w-full h-full flex flex-col md:gap-0 gap-3 relative justify-end py-10'} style={{color:"#d0813c"}} >
                 <h1 className='md:text-7xl md:text-5xl text-3xl uppercase splitTextChar overflow-hidden font-semibold text-[#C79E7A]' style={{color:"#d0813c"}}>Moni Adeboye Artistry</h1>
