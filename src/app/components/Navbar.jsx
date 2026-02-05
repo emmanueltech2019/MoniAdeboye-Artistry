@@ -95,12 +95,12 @@ const Navbar = ({className}) => {
             backgroundRepeat: 'no-repeat', 
         }}>
           
-          <div className="md:hidden flex flex-col gap-8 mb-12 bg-black text-white">
+          <div className="md:hidden flex flex-col gap-8 mb-12 text-black">
              {navLinks.map((link) => (
                 <Link 
                   key={link.name} 
                   href={link.href} 
-                  className="text-2xl font-serif uppercase tracking-widest border-b border-gray-100 pb-2 px-3"
+                  className="text-2xl font-serif uppercase tracking-widest border-b border-gray-100 pb-2 px-3 underline"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
