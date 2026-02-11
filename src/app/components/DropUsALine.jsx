@@ -5,7 +5,7 @@ import GlobalContainer from './GlobalContainer'
 
 const DropUsALine = () => {
   return (
-    <div className='my-20 flex flex-col gap-20'>
+    <div className='my-20 flex flex-col gap-20 font-inter'>
         <Image className='w-full md:h-130 h-50 object-cover' width={1000} height={1000} alt='imge' src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100527/Web_6_qlqiut.jpg'} />
         <p className='text-center text-xl'>Drop us a line </p>
         <GlobalContainer className="flex flex-col md:gap-10 gap-5 md:w-[70%] mx-auto w-full">

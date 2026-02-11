@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const Beauty = () => {
   return (
-    <GlobalContainer className={'py-10 relative'}>
+    <GlobalContainer className={'py-10 relative font-inter text-[#4A4A4A]'}>
         {/* <h2 className='md:text-7xl text-4xl mb-10'>MEET THE ARTIST</h2>
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-5 md:-mb-30 mb-5">
             <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100537/Web_5_zilckz.jpg"} alt="Moni Adeboye Artistry Logo" width={1000} height={1000} className="w-full md:h-[60%] h-[100%] object-cover object-center flex-shrink-0 md:-mb-0 -mb-40" />
@@ -19,7 +19,7 @@ const Beauty = () => {
             </div>
         </div> */}
         <section className="py-20 px-6 max-w-7xl mx-auto">
-  <h2 className="md:text-7xl text-4xl mb-12 font-serif uppercase tracking-tight text-[#d0813c]" style={{color:"#d0813c"}}>
+  <h2 className="md:text-7xl text-4xl mb-12 uppercase tracking-tight text-[#d0813c]" style={{color:"#d0813c"}}>
     Meet the Artist
   </h2>
   

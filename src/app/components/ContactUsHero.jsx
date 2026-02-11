@@ -4,9 +4,9 @@ import GlobalContainer from './GlobalContainer'
 
 const ContactUsHero = () => {
   return (
-    <GlobalContainer className="flex flex-col gap-10 md:w-[80%] mx-auto w-full">
+    <GlobalContainer className="flex flex-col gap-10 md:w-[80%] mx-auto w-full font-inter">
         <div className='flex flex-col items-center w-full pt-40 pb-20 gap-5'>
-            <h1 className="md:text-5xl text-2xl font-philosopher">CONTACT US</h1>
+            <h1 className="md:text-5xl text-2xl font-inter">CONTACT US</h1>
             {/* <p className="font-sans md:px-80 text-center text-[18px]">Find the hairdresser you can't live without! Moni Adeboye Salon is located at 5th Avenue</p> */}
         </div>
         <div className="flex flex-col gap-5 items-center w-full">

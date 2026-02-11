@@ -10,7 +10,7 @@ const ServicesHero = () => {
     const [isOpen, setIsOpen] = useState(false)
   return (
     <>
-        <GlobalContainer className="flex flex-col gap-10 md:w-[80%] mx-auto w-full">
+        <GlobalContainer className="flex flex-col gap-10 md:w-[80%] mx-auto w-full font-inter">
             <div className='flex flex-col items-center w-full pt-40 pb-20 gap-5'>
                 <h1 className="md:text-5xl text-2xl font-philosopher">SERVICES</h1>
                 <p className="font-sans md:px-56 text-center text-[18px]">We know the right treatment can make you look—and feel——like a million dollars. <br /> We are committed to only using top-of-the-line products for added luxury. Take time to pamper yourself by booking an appointment today.</p>
@@ -23,11 +23,11 @@ const ServicesHero = () => {
                 <p className="font-sans text-center text-[18px]">All services are inclusive of Premium <br /> shampoo & conditioner with head message!</p>
                 <button className='cursor-pointer hover:border-b' onClick={() => setIsOpen(true)}>Book Now</button>
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid md:grid-cols-2 gap-3">
                 <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1212426774-scaled.jpg'} width={1000} height={1000} alt='image' className='md:h-120 h-50 object-cover' />
-                <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1212426774-scaled.jpg'} width={1000} height={1000} alt='image' className='md:h-120 h-50 object-cover' />
-                <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1212426774-scaled.jpg'} width={1000} height={1000} alt='image' className='md:h-120 h-50 object-cover' />
-                <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1212426774-scaled.jpg'} width={1000} height={1000} alt='image' className='md:h-120 h-50 object-cover' />
+                <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1212426774-scaled.jpg'} width={1000} height={1000} alt='image' className='md:h-120 h-50 object-cover md:block hidden' />
+                <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1212426774-scaled.jpg'} width={1000} height={1000} alt='image' className='md:h-120 h-50 object-cover md:block hidden' />
+                <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1212426774-scaled.jpg'} width={1000} height={1000} alt='image' className='md:h-120 h-50 object-cover md:block hidden' />
             </div>
         </GlobalContainer>
         <GlobalContainer className="grid md:grid-cols-[4fr_8fr] md:p-20 p-5 mx-auto w-full items-center">
@@ -36,11 +36,11 @@ const ServicesHero = () => {
                 <p className="font-sans text-center text-[18px]">The stay in our salon will bring you beauty <br /> pleasure, relax and good mood.</p>
                 <button className='cursor-pointer hover:border-b' onClick={() => setIsOpen(true)}>Book Now</button>
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid md:grid-cols-2 gap-3">
                 <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1282162846-scaled.jpg'} width={1000} height={1000} alt='image' className='w-full md:h-120 h-50 object-cover' />
-                <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1282162846-scaled.jpg'} width={1000} height={1000} alt='image' className='w-full md:h-120 h-50 object-cover' />
-                <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1282162846-scaled.jpg'} width={1000} height={1000} alt='image' className='w-full md:h-120 h-50 object-cover' />
-                <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1282162846-scaled.jpg'} width={1000} height={1000} alt='image' className='w-full md:h-120 h-50 object-cover' />
+                <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1282162846-scaled.jpg'} width={1000} height={1000} alt='image' className='w-full md:h-120 h-50 object-cover md:block hidden' />
+                <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1282162846-scaled.jpg'} width={1000} height={1000} alt='image' className='w-full md:h-120 h-50 object-cover md:block hidden' />
+                <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1282162846-scaled.jpg'} width={1000} height={1000} alt='image' className='w-full md:h-120 h-50 object-cover md:block hidden' />
             </div>
         </GlobalContainer>
         <GlobalContainer className="flex flex-col gap-10 md:w-[80%] mx-auto w-full">
