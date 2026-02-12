@@ -83,16 +83,11 @@ export default function Home() {
         {/* <Navbar className={'top-translate'} /> */}
         <div className="h-screen w-full relative trigger-this">
             <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_vratey.jpg"} width={1000} height={1000} alt='background' className='w-full h-full absolute opacity-50 top-0 left-0 object-cover' />
-            <GlobalContainer className={'w-full h-full md:flex hidden flex-col md:gap-0 gap-3 relative justify-end py-10'} style={{color:"#3A2F2A"}} >
-                <h1 className='md:text-7xl md:text-5xl text-3xl uppercase splitTextChar overflow-hidden font-semibold text-[#C79E7A] hidden md:block' style={{color:"#3A2F2A"}}>Moni Adeboye Artistry</h1>
-                <span className='md:text-7xl text-4xl splitTextWord overflow-hidden hidden md:block' style={{color:"#3A2F2A"}}>WHERE ARTISTRY. <br /> MEETS ELEGANCE.</span>
-                <p className='md:pe-200 opacity-paragraph hidden md:block'>Moni Adeboye Artistry is a skin-focused makeup studio dedicated to creating clean, seamless looks that enhance natural beauty. Every experience is thoughtfully tailored, delivering refined, confidence-boosting results for every occasion.</p>
-            </GlobalContainer>
         </div>
-        <GlobalContainer className={'max-w-7xl text-center mx-auto h-full md:hidden flex flex-col md:gap-0 gap-3 relative justify-end pt-10'} style={{color:"#3A2F2A"}} >
+        <GlobalContainer className={'max-w-7xl text-center items-center mx-auto h-full md:flex hidden flex-col md:gap-0 gap-3 relative justify-end pt-10'} style={{color:"#3A2F2A"}} >
             <h1 className='md:text-7xl text-2xl uppercase splitTextChar overflow-hidden font-hero font-semibold text-[#C79E7A]' style={{color:"#3A2F2A"}}>Moni Adeboye Artistry</h1>
             <span className='md:text-7xl text-4xl splitTextWord font-hero overflow-hidden' style={{color:"#3A2F2A"}}>WHERE ARTISTRY. <br /> MEETS ELEGANCE.</span>
-            <p className='md:pe-200 opacity-paragraph'>Moni Adeboye Artistry is a skin-focused makeup studio dedicated to creating clean, seamless looks that enhance natural beauty. Every experience is thoughtfully tailored, delivering refined, confidence-boosting results for every occasion.</p>
+            <p className='md:px-100 opacity-paragraph text-center'>Moni Adeboye Artistry is a skin-focused makeup studio dedicated to creating clean, seamless looks that enhance natural beauty. Every experience is thoughtfully tailored, delivering refined, confidence-boosting results for every occasion.</p>
         </GlobalContainer>
         <Beauty />
         <Beautiful />
