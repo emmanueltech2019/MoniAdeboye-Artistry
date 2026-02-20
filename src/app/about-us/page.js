@@ -14,7 +14,7 @@ const page = () => {
       <Image width={1000} height={1000} alt='image' className='w-full' src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1770254374/image_16_i0rlsl.png'} />
       <GlobalContainer className="grid md:grid-cols-2 grid-cols-1 gap-10 md:w-[80%] mx-auto w-full mb-20 pt-40 border-b border-gray-300">
           <div className='flex flex-col justify-between items-center w-full  gap-5'>
-              <h1 className="md:text-5xl text-2xl font-philosopher">My Mission</h1>
+              <h1 className="md:text-5xl text-2xl font-philosopher">OUR MISSION</h1>
               <Image width={1000} height={1000} alt='image' className='w-40' src={'https://coiffure.vamtam.com/wp-content/uploads/2023/01/GettyImages-1317331156.svg'} />
               <p className="font-sans md:px-56 text-center text-[18px]"></p>
           </div>
@@ -28,7 +28,7 @@ const page = () => {
           <h2 className='md:text-5xl text-2xl font-philosopher'>Brand Story</h2>
           <p className='md:text-lg text-md'>My journey began with a passion for beauty. I started out self-taught, practicing on myself and friends, before going through professional training to refine my artistry. What began as something I loved has now grown into a career where I not only serve clients but also share my knowledge with others who want to learn makeup for personal or professional use.
 </p>
-          <button className='p-4 bg-black text-white'>Book an appointment</button>
+          <button className='p-4 text-white bg-[#d0813c] hover:bg-[#392f2a]'>Book an appointment</button>
         </div>
       </GlobalContainer>
       <GlobalContainer className={'grid md:grid-cols-2 grid-cols-1 my-40 items-center'}>

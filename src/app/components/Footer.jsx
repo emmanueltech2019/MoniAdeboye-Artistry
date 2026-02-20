@@ -62,7 +62,7 @@ const Footer = () => {
 
             {/* Location */}
             <div className="flex flex-col gap-6">
-                <span className="text-xs uppercase tracking-[0.3em] text-neutral-400 font-medium">Location</span>
+                <span className="text-xs uppercase tracking-[0.3em] font-medium text-[#d0813c]">Location</span>
                 <div className="flex flex-col gap-3 text-neutral-700">
                     <p>Yaba, Lagos.</p>
                 </div>

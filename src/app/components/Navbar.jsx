@@ -125,7 +125,7 @@ const Navbar = ({className}) => {
             </section>
 
             <section>
-              <h4 className="text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-6">Location</h4>
+              <h4 className="text-[10px] uppercase tracking-[0.3em]  mb-6 text-[#d0813c]">Location</h4>
               <p className="text-sm font-light leading-relaxed">
                 Yaba, Lagos.
               </p>
@@ -133,7 +133,7 @@ const Navbar = ({className}) => {
 
             <button 
               onClick={() => { setIsModalOpen(true); setIsMenuOpen(false); }}
-              className="bg-[#1A1A1A] text-white px-8 py-4 text-[10px] uppercase tracking-[0.2em] w-full md:w-auto"
+              className="bg-[#d0813c] hover:bg-[#392f2a] text-white px-8 py-4 text-[10px] uppercase tracking-[0.2em] w-full md:w-auto"
             >
               Book an appointment
             </button>

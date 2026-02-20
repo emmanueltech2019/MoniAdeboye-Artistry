@@ -48,7 +48,7 @@ const Guarantee = () => {
           <h3 className='text-3xl font-medium text-white' style={{color:"#fff !important"}}>
             WE CAN GUARANTEE YOU HAVE NEVER RECEIVED AS MANY COMPLIMENTS AS YOU WILL, AFTER YOU BOOK A VISIT WITH US.
           </h3>
-          <button className='py-3 px-10 bg-white text-black font-bold hover:bg-black hover:text-white transition-colors'>
+          <button className='py-3 px-10 bg-white text-black font-bold hover:bg-black hover:text-white transition-colors bg-[#d0813c] hover:bg-[#392f2a]'>
             BOOK YOUR SESSION
           </button>
       </GlobalContainer>

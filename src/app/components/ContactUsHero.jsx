@@ -12,7 +12,7 @@ const ContactUsHero = () => {
         <div className="flex flex-col gap-5 items-center w-full">
             <div className="flex md:flex-row flex-col justify-between w-full gap-10">
                 <div className="flex flex-col gap-5">
-                    <span className='md:text-5xl text-2xl font-philosopher'>LOCATION</span>
+                    <span className='md:text-5xl text-2xl font-philosopher text-[#d0813c]'>LOCATION</span>
                     <div className="flex md:gap-20 md:justify-start justify-between gap-5 items-center">
                         <div className="flex flex-col gap-1 tracking-widest text-[12px] font-semibold">
                             {/* <p className="flex items-center">758 5TH AVENUE <ArrowRight className='-rotate-45' strokeWidth={1} size={15} /></p> */}

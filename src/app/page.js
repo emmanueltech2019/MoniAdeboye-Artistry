@@ -84,18 +84,18 @@ export default function Home() {
         <div className="h-screen w-full relative trigger-this">
             <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_vratey.jpg"} width={1000} height={1000} alt='background' className='w-full h-full absolute opacity-50 top-0 left-0 object-cover' />
         </div>
-        <GlobalContainer className={'max-w-7xl text-center items-center mx-auto h-full flex flex-col md:gap-0 gap-3 relative justify-end pt-10'} style={{color:"#3A2F2A"}} >
+        <GlobalContainer className={'md:pb-10 max-w-7xl md:text-left text-center md:items-start items-center md:mx-2 mx-auto h-full flex flex-col md:gap-0 gap-3 relative justify-end pt-10 md:absolute md:bottom-2 md:left-2'} style={{color:"#3A2F2A"}} >
             <h1 className='md:text-7xl text-2xl uppercase splitTextChar overflow-hidden font-hero font-semibold text-[#C79E7A]' style={{color:"#3A2F2A"}}>Moni Adeboye Artistry</h1>
-            <span className='md:text-7xl text-4xl splitTextWord font-hero md:block hidden overflow-hidden' style={{color:"#3A2F2A"}}>WHERE ARTISTRY. <br /> MEETS ELEGANCE.</span>
-            <p className='md:px-100 opacity-paragraph text-center'>Moni Adeboye Artistry is a skin-focused makeup studio dedicated to creating clean, seamless looks that enhance natural beauty. Every experience is thoughtfully tailored, delivering refined, confidence-boosting results for every occasion.</p>
+            <span className='md:text-5xl text-4xl splitTextWord font-hero md:block hidden overflow-hidden' style={{color:"#3A2F2A"}}>WHERE ARTISTRY MEETS ELEGANCE.</span>
+            <p className='md:pr-100 opacity-paragraph md:text-left text-center'>Moni Adeboye Artistry is a skin-focused makeup studio dedicated to creating clean, seamless looks that enhance natural beauty. Every experience is thoughtfully tailored, delivering refined, confidence-boosting results for every occasion.</p>
         </GlobalContainer>
         <Beauty />
-        <Beautiful />
+        {/* <Beautiful /> */}
         {/* <Guarantee /> */}
         {/* <Team /> */}
         {/* <BeYourBest /> */}
         {/* <Products /> */}
-        <WhatYouShouldKnow />
+        {/* <WhatYouShouldKnow /> */}
         <Creative />
         {/* <FlexImages /> */}
         <Appointment />

@@ -67,7 +67,7 @@ const Creative = () => {
             Home to sophisticated <br /> and elegant artistry
         </h6>
         <div className="border-t border-[#d8d6d0] py-5 flex flex-col gap-10">
-            <p>.Location & Hours</p>
+            <p className='text-[#d0813c]'>.Location & Hours</p>
             <div className="grid md:grid-cols-[4fr_8fr] mt-5">
                 <div className="p-10 bg-[#eeebe2] flex flex-col gap-5">
                     <p className="text-3xl">HOURS</p>
@@ -86,7 +86,7 @@ const Creative = () => {
                         </div>
                     </div>
                     <div className="pt-5 border-t border-[#d8d6d0] flex flex-col gap-5">
-                        <p className="text-3xl uppercase">Location</p>
+                        <p className="text-3xl uppercase text-[#d0813c]">Location</p>
                         <div className="flex flex-col gap-2">
                             <Link href="mailto:monisolaadeboye@gmail.com" className="hover:underline">monisolaadeboye@gmail.com</Link>
                             <Link href="tel:09076516441" className="hover:underline">09076516441</Link>
