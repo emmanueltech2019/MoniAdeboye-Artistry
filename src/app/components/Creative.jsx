@@ -63,9 +63,9 @@ const Creative = () => {
   return (
     <GlobalContainer className={'flex flex-col gap-20 my-20'}>
         {/* Updated Heading based on brand mission */}
-        <h6 className="md:text-5xl text-3xl uppercase" style={{color:"#d0813c"}}>
+        {/* <h6 className="md:text-5xl text-3xl uppercase" style={{color:"#d0813c"}}>
             Home to sophisticated <br /> and elegant artistry
-        </h6>
+        </h6> */}
         <div className="border-t border-[#d8d6d0] py-5 flex flex-col gap-10">
             <p className='text-[#d0813c]'>.Location & Hours</p>
             <div className="grid md:grid-cols-[4fr_8fr] mt-5">
