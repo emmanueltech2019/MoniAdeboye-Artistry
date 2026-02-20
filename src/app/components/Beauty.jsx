@@ -27,7 +27,8 @@ const Beauty = () => {
     {/* Image Container */}
     <div className="w-full">
       <Image 
-        src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100537/Web_5_zilckz.jpg"} 
+        src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1771608213/IMG_8487_fbpfwn.jpg"} 
+        // src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100537/Web_5_zilckz.jpg"} 
         alt="Moni Adeboye - Head Artist" 
         width={500} 
         height={600} 
@@ -103,7 +104,7 @@ const Beauty = () => {
         <div className="group cursor-pointer">
           <div className="overflow-hidden mb-4">
             <Image 
-              src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100529/Web_2_knbhbv.jpg"} 
+              src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1771608420/IMG_7680_foevj4.jpg"} 
               width={1000} height={1000} alt='Bridal Makeup' 
               className='md:h-[450px] w-full object-cover transition-transform duration-700 group-hover:scale-105' 
             />
@@ -115,7 +116,7 @@ const Beauty = () => {
         <div className="group cursor-pointer">
           <div className="overflow-hidden mb-4">
             <Image 
-              src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100529/Web_1.0_ucdq5b.jpg"} 
+              src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1771608521/IMG_8475_sxzqik.jpg"} 
               width={1000} height={1000} alt='Editorial Makeup' 
               className='md:h-[450px] w-full object-cover transition-transform duration-700 group-hover:scale-105' 
             />
@@ -127,7 +128,7 @@ const Beauty = () => {
         <div className="group cursor-pointer">
           <div className="overflow-hidden mb-4">
             <Image 
-              src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100536/Website_1_r76udd.jpg"} 
+              src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1771608570/IMG_8458_zvurey.jpg"} 
               width={1000} height={1000} alt='Event Makeup' 
               className='md:h-[450px] w-full object-cover transition-transform duration-700 group-hover:scale-105' 
             />

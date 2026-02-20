@@ -16,7 +16,7 @@ const ServicesHero = () => {
                 <p className="font-sans md:px-56 text-center text-[18px]">We know the right treatment can make you look—and feel——like a million dollars. <br /> We are committed to only using top-of-the-line products for added luxury. Take time to pamper yourself by booking an appointment today.</p>
             </div>
         </GlobalContainer>
-        <Image src={'https://coiffure.vamtam.com/wp-content/uploads/2023/02/GettyImages-1129384936-scaled.jpg'} width={1000} height={1000} alt='image' className='w-full md:h-120 h-50 object-cover' />
+        <Image src={'https://res.cloudinary.com/wise-solution-inc/image/upload/v1770254374/image_16_i0rlsl.png'} width={1000} height={1000} alt='image' className='w-full md:h-120 h-50 object-cover' />
         <GlobalContainer className="grid md:grid-cols-[4fr_8fr] md:p-20 p-5 mx-auto w-full items-center">
             <div className='flex flex-col items-center w-full pb-20 gap-5'>
                 <h1 className="md:text-5xl text-2xl font-philosopher">HAIR</h1>
