@@ -18,7 +18,7 @@ const page = () => {
               <Image width={1000} height={1000} alt='image' className='w-40' src={'https://coiffure.vamtam.com/wp-content/uploads/2023/01/GettyImages-1317331156.svg'} />
               <p className="font-sans md:px-56 text-center text-[18px]"></p>
           </div>
-          <p className='md:text-lg'>I believe makeup should enhance, not mask. My mission is to deliver flawless, natural glam that celebrates individuality. With attention to detail, professionalism, and a client-first approach, I aim to help women see the best version of themselves — and step into every moment with confidence.
+          <p className='md:text-lg'>I believe makeup should enhance, not mask. Our mission is to deliver flawless, natural glam that celebrates individuality. With attention to detail, professionalism, and a client-first approach, I aim to help women see the best version of themselves — and step into every moment with confidence.
 
           </p>
       </GlobalContainer>
