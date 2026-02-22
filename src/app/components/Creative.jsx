@@ -101,7 +101,7 @@ const Creative = () => {
 
                 {/* Image Section with Black Overlay */}
                 <div className="w-full h-full relative" style={{
-                    backgroundImage: `url(https://res.cloudinary.com/wise-solution-inc/image/upload/v1768103805/560661079_18238893982295532_250446624367988961_n_fdgc7p.jpg)`, 
+                    backgroundImage: `url(https://res.cloudinary.com/wise-solution-inc/image/upload/v1771608521/IMG_8475_sxzqik.jpg)`, 
                     backgroundSize: 'cover', 
                     backgroundPosition: 'center', 
                     backgroundRepeat: 'no-repeat'

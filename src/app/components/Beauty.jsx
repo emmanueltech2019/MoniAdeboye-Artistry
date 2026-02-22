@@ -5,8 +5,11 @@ import beauty from '@/images/three.jpg'
 import nails from '@/images/six.jpg'
 import hair from '@/images/four.jpg'
 import Link from 'next/link'
+import replaceEvent from '@/images/replaceEvent.jpeg'
+import { useRouter } from 'next/navigation'
 
 const Beauty = () => {
+  const router = useRouter()
   return (
     <GlobalContainer className={'py-10 relative font-inter text-[#4A4A4A]'}>
         {/* <h2 className='md:text-7xl text-4xl mb-10'>MEET THE ARTIST</h2>
@@ -44,18 +47,12 @@ const Beauty = () => {
       
       <div className="space-y-6 text-lg leading-relaxed text-neutral-600 font-light">
         <p>
-          I am a professional makeup artist with over a decade of experience, 
-          including four years as a full-time beauty professional.
+          I am a professional makeup artist with over a decade of experience, including four years as a full-time beauty professional.
         </p>
         <p>
-          As a certified bridal artist, my style is all about creating 
-          <span className="font-semibold text-neutral-800"> clean, lightweight, and skin-like glam </span> 
-          that enhances your natural beauty while leaving you polished, radiant, and confident.
+          As a certified bridal artist, my style centers on <span className='font-semibold text-neutral-800'>clean, lightweight, skin-like glam</span> that enhances your natural beauty—leaving you polished, radiant, and confidently refined.
         </p>
-      </div>
-      
-      <div className="mt-10 border-t border-neutral-200 pt-6">
-        <button className="text-sm tracking-widest uppercase text-neutral-400">Learn more</button>
+        <p>My portfolio spans bridal, editorial, events, and on-screen productions—showcasing the breadth of my artistry while remaining rooted in the skin-focused, clean glam aesthetic that defines my work.</p>
       </div>
     </div>
   </div>
@@ -128,7 +125,7 @@ const Beauty = () => {
         <div className="group cursor-pointer">
           <div className="overflow-hidden mb-4">
             <Image 
-              src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1771608570/IMG_8458_zvurey.jpg"} 
+              src={replaceEvent} 
               width={1000} height={1000} alt='Event Makeup' 
               className='md:h-[450px] w-full object-cover transition-transform duration-700 group-hover:scale-105' 
             />
@@ -140,7 +137,7 @@ const Beauty = () => {
 
       {/* Action Area */}
       <div className="mt-4 flex justify-end">
-        <button className="text-xs tracking-[0.3em] uppercase text-neutral-500 border border-neutral-300 rounded-full px-10 py-4 hover:bg-neutral-800 hover:text-white hover:border-neutral-800 transition-all duration-300">
+        <button onClick={() => router.push('/services')} className="text-xs tracking-[0.3em] uppercase text-neutral-500 border border-neutral-300 rounded-full px-10 py-4 hover:bg-neutral-800 hover:text-white hover:border-neutral-800 transition-all duration-300">
           Explore All Services
         </button>
       </div>
