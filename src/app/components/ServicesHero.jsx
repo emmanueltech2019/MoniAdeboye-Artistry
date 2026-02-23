@@ -35,29 +35,29 @@ const ServicesHero = () => {
                 <p className="font-sans md:px-26 text-center text-[18px]">The right beauty experience does more than transform how you look, it refines how you present yourself.<br /> At Moni Adeboye Studio, every service is delivered with precision, intention, and a commitment to refined execution. We work with high-performance, professional-grade products to ensure flawless results that photograph beautifully and wear seamlessly. Each appointment is designed to be calm, structured, and detail-focused—so you leave polished, confident, and impeccably prepared for your moment. <br /> Book your session and experience beauty, executed with intention.</p>
             </div>
         </GlobalContainer>
-        <Image src={servicesHeroBackground} width={1000} height={1000} alt='image' className='w-full h-150 object-top object-cover' />
-        <GlobalContainer className="grid md:grid-cols-[4fr_8fr] md:p-20 p-5 mx-auto w-full items-center">
-            <div className='flex flex-col items-center w-full pb-20 gap-5'>
-                <h1 className="md:text-5xl text-2xl font-philosopher">BEAUTY EDITORIAL</h1>
-                <button className='cursor-pointer hover:border-b' onClick={() => setIsOpen(true)}>Book Now</button>
-            </div>
-            <div className="grid md:grid-cols-2 gap-3">
-                <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1771608521/IMG_8475_sxzqik.jpg"} width={1000} height={1000} alt='image' className='md:h-120 h-80 object-top object-cover' />
-                <Image src={three} width={1000} height={1000} alt='image' className='md:h-120 h-80 object-top object-cover md:block hidden' />
-                <Image src={ten} width={1000} height={1000} alt='image' className='md:h-120 h-80 object-top object-cover md:block hidden' />
-                <Image src={beautityEditorial} width={1000} height={1000} alt='image' className='md:h-120 h-80 object-top object-cover md:block hidden' />
-            </div>
-        </GlobalContainer>
+        <Image src={servicesHeroBackground} width={1000} height={1000} alt='image' className='w-full object-top object-cover' />
         <GlobalContainer className="grid md:grid-cols-[4fr_8fr] md:p-20 p-5 mx-auto w-full items-center">
             <div className='flex flex-col items-center w-full pb-20 gap-5'>
                 <h1 className="md:text-5xl text-2xl font-philosopher">BRIDAL</h1>
                 <button className='cursor-pointer hover:border-b' onClick={() => setIsOpen(true)}>Book Now</button>
             </div>
             <div className="grid md:grid-cols-2 gap-3">
-                <Image src={bridal1} width={1000} height={1000} alt='image' className='w-full md:h-120 h-80 object-top object-cover' />
-                <Image src={bridal2} width={1000} height={1000} alt='image' className='w-full md:h-120 h-80 object-top object-cover md:block hidden' />
-                <Image src={replaceBridal} width={1000} height={1000} alt='image' className='w-full md:h-120 h-80 object-top object-cover md:block hidden' />
-                <Image src={bridal4} width={1000} height={1000} alt='image' className='w-full md:h-120 h-80 object-top object-cover md:block hidden' />
+                <Image src={bridal1} width={1000} height={1000} alt='image' className='w-full h-full object-top object-cover' />
+                <Image src={bridal2} width={1000} height={1000} alt='image' className='w-full h-full object-top object-cover md:block hidden' />
+                <Image src={replaceBridal} width={1000} height={1000} alt='image' className='w-full h-full object-top object-cover md:block hidden' />
+                <Image src={bridal4} width={1000} height={1000} alt='image' className='w-full h-full object-top object-cover md:block hidden' />
+            </div>
+        </GlobalContainer>
+        <GlobalContainer className="grid md:grid-cols-[4fr_8fr] md:p-20 p-5 mx-auto w-full items-center">
+            <div className='flex flex-col items-center w-full pb-20 gap-5'>
+                <h1 className="md:text-5xl text-2xl font-philosopher">BEAUTY EDITORIAL</h1>
+                <button className='cursor-pointer hover:border-b' onClick={() => setIsOpen(true)}>Book Now</button>
+            </div>
+            <div className="grid md:grid-cols-2 gap-3">
+                <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1771608521/IMG_8475_sxzqik.jpg"} width={1000} height={1000} alt='image' className='h-full object-top object-cover' />
+                <Image src={three} width={1000} height={1000} alt='image' className='h-full object-top object-cover md:block hidden' />
+                <Image src={ten} width={1000} height={1000} alt='image' className='h-full object-top object-cover md:block hidden' />
+                <Image src={beautityEditorial} width={1000} height={1000} alt='image' className='h-full object-top object-cover md:block hidden' />
             </div>
         </GlobalContainer>
         <GlobalContainer className="grid md:grid-cols-[4fr_8fr] md:p-20 p-5 mx-auto w-full items-center">
