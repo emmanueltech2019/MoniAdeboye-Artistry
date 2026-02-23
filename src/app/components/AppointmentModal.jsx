@@ -393,7 +393,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               </div>
               <div className="flex gap-3">
                 <button type="button" onClick={() => setStep(1)} className="w-1/3 border border-black py-4 uppercase text-xs">Back</button>
-                <button type="submit" className="w-2/3 bg-green-700 text-white py-4 uppercase text-xs tracking-widest font-bold">Confirm & Book</button>
+                <button type="submit" className="w-2/3 bg-green-700 text-white py-4 uppercase text-xs tracking-widest font-bold">I Agree</button>
               </div>
             </div>
           ) : (
@@ -415,7 +415,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
 
               <div className="flex gap-4">
                 <button type="button" onClick={() => setStep(2)} className="w-1/3 border border-black py-4 uppercase text-xs">Back</button>
-                <button type="submit" className="w-2/3 bg-green-700 text-white py-4 uppercase text-xs tracking-widest font-bold">Proceed</button>
+                <button type="submit" className="w-2/3 bg-green-700 text-white py-4 uppercase text-xs tracking-widest font-bold">Confirm & Book</button>
               </div>
             </div>
           )}
