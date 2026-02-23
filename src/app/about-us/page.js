@@ -5,12 +5,6 @@ import GlobalContainer from '../components/GlobalContainer'
 const page = () => {
   return (
     <>
-      <GlobalContainer className="flex flex-col gap-10 md:w-[80%] mx-auto w-full">
-          <div className='flex flex-col items-center w-full pt-40 pb-20 gap-5'>
-              <h1 className="md:text-5xl text-2xl font-philosopher">SALON</h1>
-              <p className="font-sans md:px-56 text-center text-[18px]">Over here, beauty is approached as identity architecture- carefully refined, thoughtfully executed, and designed to communicate who you are before you speak.</p>
-          </div>
-      </GlobalContainer>
       <GlobalContainer className="grid md:grid-cols-2 grid-cols-1 gap-10 md:w-[80%] mx-auto w-full mb-20 pt-40 border-b border-gray-300">
           <div className='flex flex-col justify-between items-center w-full  gap-5'>
               <h1 className="md:text-5xl text-2xl font-philosopher">OUR MISSION</h1>

@@ -187,6 +187,7 @@
 
 // export default AppointmentModal;
 "use client";
+import { Dot } from "lucide-react";
 import React, { useState } from "react";
 
 const AppointmentModal = ({ isOpen, onClose }) => {
@@ -247,7 +248,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
     
     const data = new FormData(e.currentTarget);
     setFormData(Object.fromEntries(data)); // Save inputs to state
-    setStep(2);
+    setStep(prev => prev + 1);
   };
 
   const handleSubmitFinal = (e) => {
@@ -290,11 +291,10 @@ const AppointmentModal = ({ isOpen, onClose }) => {
           {step === 1 ? "Book an Appointment" : "Complete Payment"}
         </h2>
                 <p className="text-xs text-gray-600 mb-8 leading-relaxed max-w-md mx-auto">
-            This reservation is not guaranteed on the selected day and time. We
-            will contact you by phone as soon as possible to confirm your time.
+            Your booking request has been received. We will contact you shortly after payment confirmation to confirm your appointment time.
           </p>
 
-        <form className="space-y-4" onSubmit={step === 1 ? handleNextStep : handleSubmitFinal}>
+        <form className="space-y-4" onSubmit={step === 1 ? handleNextStep : step === 2 ? handleNextStep : handleSubmitFinal}>
           {step === 1 ? (
             <div className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -305,8 +305,8 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input name="email" type="email" placeholder="Email address" defaultValue={formData.email} required className="w-full border border-gray-300 p-3 outline-none focus:border-black bg-transparent" />
                 <div className="grid grid-cols-2 gap-2">
-                  <input name="date" type="date" defaultValue={formData.date} required className="w-full border border-gray-300 p-3 outline-none focus:border-black bg-transparent" />
-                  <input name="time" type="time" defaultValue={formData.time} required className="w-full border border-gray-300 p-3 outline-none focus:border-black bg-transparent" />
+                  <input name="date" type="date" placeholder="date" defaultValue={formData.date} required className="w-full border border-gray-300 p-3 outline-none focus:border-black bg-transparent" />
+                  <input name="time" type="time" placeholder="time" defaultValue={formData.time} required className="w-full border border-gray-300 p-3 outline-none focus:border-black bg-transparent" />
                 </div>
               </div>
 
@@ -327,8 +327,74 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               )}
 
               <button type="submit" className="w-full bg-black text-white py-4 uppercase tracking-widest">
-                Continue to Payment
+                View Payment Policy
               </button>
+            </div>
+          ) : step === 2 ? (
+            <div className="space-y-6">
+              <div className="bg-gray-100 p-6 rounded-lg text-left border-l-4 border-black">
+                <p className="text-xs uppercase text-gray-500 mb-2">WALK-IN BOOKING POLICY</p>
+                <div className="flex items-center">
+                  <Dot fill="black" />
+                  <p>To complete your booking, a 50% deposit is required to secure your date and time.</p>
+                </div>
+                <div className="flex items-center">
+                  <Dot fill="black" />
+                  <p>Deposit must be paid at least 48 hours before your appointment.</p>
+                </div>
+                <div className="flex items-center">
+                  <Dot fill="black" />
+                  <p>All payments are non-refundable.</p>
+                </div>
+                <p className="font-bold text-xl mt-5">Punctuality</p>
+                <div className="flex items-center">
+                  <Dot fill="black" />
+                  <p>Please arrive exactly at your booked time.</p>
+                </div>
+                <div className="flex items-center">
+                  <Dot fill="black" />
+                  <p>A 15-minute grace period applies.</p>
+                </div>
+                <div className="flex items-center">
+                  <Dot fill="black" />
+                  <p>After the grace period, 50% of your deposit will be forfeited and the balance must be paid before service commences.</p>
+                </div>
+                <div className="flex items-center">
+                  <Dot fill="black" />
+                  <p>Lateness of over 1 hour may result in cancellation with no refund. Cancellation / Rescheduling</p>
+                </div>
+                <div className="flex items-center">
+                  <Dot fill="black" />
+                  <p>Cancellations or rescheduling within 24 hours of the appointment will result in loss of deposit</p>
+                </div>
+                <div className="flex items-center">
+                  <Dot fill="black" />
+                  <p>Rescheduling earlier than 24 hours may be considered once, subject to availability.</p>
+                </div>
+                <div className="flex items-center">
+                  <Dot fill="black" />
+                  <p>Rescheduling earlier than 24 hours may be considered once, subject to availability.</p>
+                </div>
+                <p className="font-bold text-xl mt-5">Guests</p>
+                <div className="flex items-center">
+                  <Dot fill="black" />
+                  <p>One client per appointment</p>
+                </div>
+                <div className="flex items-center">
+                  <Dot fill="black" />
+                  <p>Only one additional person is allowed when necessary</p>
+                </div>
+                <p className="font-bold text-xl mt-5">Content Usage</p>
+                <div className="flex items-center">
+                  <Dot fill="black" />
+                  <p>By booking, clients cconsent to photos and videos being taken and used for promotional purposes, unless stated otherwise before the session.</p>
+                </div>
+                <p className="mt-5">Thank you for your undetstanding <br /> See you at your appointment time.</p>
+              </div>
+              <div className="flex gap-3">
+                <button type="button" onClick={() => setStep(1)} className="w-1/3 border border-black py-4 uppercase text-xs">Back</button>
+                <button type="submit" className="w-2/3 bg-green-700 text-white py-4 uppercase text-xs tracking-widest font-bold">Confirm & Book</button>
+              </div>
             </div>
           ) : (
             <div className="space-y-6">
@@ -348,8 +414,8 @@ const AppointmentModal = ({ isOpen, onClose }) => {
               </div>
 
               <div className="flex gap-4">
-                <button type="button" onClick={() => setStep(1)} className="w-1/3 border border-black py-4 uppercase text-xs">Back</button>
-                <button type="submit" className="w-2/3 bg-green-700 text-white py-4 uppercase text-xs tracking-widest font-bold">Confirm & Book</button>
+                <button type="button" onClick={() => setStep(2)} className="w-1/3 border border-black py-4 uppercase text-xs">Back</button>
+                <button type="submit" className="w-2/3 bg-green-700 text-white py-4 uppercase text-xs tracking-widest font-bold">Proceed</button>
               </div>
             </div>
           )}
