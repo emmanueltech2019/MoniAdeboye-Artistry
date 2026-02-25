@@ -80,7 +80,6 @@ export default function Home() {
         <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_vratey.jpg"} alt="Moni Adeboye Artistry Logo" width={1000} height={1000} className="w-50 flex-shrink-0 clip" />
       </div>
       <div>
-        {/* <Navbar className={'top-translate'} /> */}
         <div className="h-screen w-full relative trigger-this">
             <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1768100530/Web_vratey.jpg"} width={1000} height={1000} alt='background' className='w-full h-full absolute opacity-50 top-0 left-0 object-cover' />
         </div>

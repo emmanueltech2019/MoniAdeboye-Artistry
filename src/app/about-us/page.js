@@ -1,10 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
 import GlobalContainer from '../components/GlobalContainer'
+import six from '@/images/six.jpg'
 
 const page = () => {
   return (
     <>
+      <div className='flex flex-col gap-5 mt-40 items-center'>
+        <p className='text-center text-lg md:px-80'>Everything we do at Moni Ade boye is motivated by our commitment to discover and shaping the story you want to tell though your personal style.</p>
+         <Image src={six} width={1000} height={1000} alt='background' className='w-full h-100 object-cover' />
+      </div>
       <GlobalContainer className="grid md:grid-cols-2 grid-cols-1 gap-10 md:w-[80%] mx-auto w-full mb-20 pt-40 border-b border-gray-300">
           <div className='flex flex-col justify-between items-center w-full  gap-5'>
               <h1 className="md:text-5xl text-2xl font-philosopher">OUR MISSION</h1>
