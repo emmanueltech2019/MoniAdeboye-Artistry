@@ -23,7 +23,7 @@ import photoShoot3 from '@/images/photoShoot3.jpeg'
 import photoShoot4 from '@/images/photoShoot4.jpg'
 import replaceEvent from '@/images/replaceEvent.jpeg'
 import replaceBridal from '@/images/replaceBridal.jpeg'
-import servicesHeroBackground from '@/images/servicesHeroBackground.jpeg'
+import servicesHeroBackground from '@/images/replaceServicesHero.jpg'
 
 const ServicesHero = () => {
     const [isOpen, setIsOpen] = useState(false)

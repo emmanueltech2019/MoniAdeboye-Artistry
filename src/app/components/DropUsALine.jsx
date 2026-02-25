@@ -34,7 +34,7 @@ const DropUsALine = () => {
                 <p className="text-sm">Message</p>
                 <textarea name="" id="" className='border border-gray-300 p-4 bg-white placeholder:text-black outline-none' placeholder='Type here'></textarea>
             </div>
-            <button type="submit" className='bg-black text-white p-5 me-auto'>Send</button>
+            <button type="submit" className='bg-black text-white p-5 md:me-auto'>Send</button>
         </GlobalContainer>
     </div>
   )
