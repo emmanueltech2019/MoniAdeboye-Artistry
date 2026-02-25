@@ -35,7 +35,7 @@ const ServicesHero = () => {
                 <p className="font-sans md:px-26 text-center text-[18px]">The right beauty experience does more than transform how you look, it refines how you present yourself.<br /> At Moni Adeboye Studio, every service is delivered with precision, intention, and a commitment to refined execution. We work with high-performance, professional-grade products to ensure flawless results that photograph beautifully and wear seamlessly. Each appointment is designed to be calm, structured, and detail-focused—so you leave polished, confident, and impeccably prepared for your moment. <br /> Book your session and experience beauty, executed with intention.</p>
             </div>
         </GlobalContainer>
-        <Image src={servicesHeroBackground} width={1000} height={1000} alt='image' className='w-full object-top object-cover' />
+        <Image src={servicesHeroBackground} width={1000} height={1000} alt='image' className='w-full object-top object-cover h-100' />
         <GlobalContainer className="grid md:grid-cols-[4fr_8fr] md:p-20 p-5 mx-auto w-full items-center">
             <div className='flex flex-col items-center w-full pb-20 gap-5'>
                 <h1 className="md:text-5xl text-2xl font-philosopher">BRIDAL</h1>
