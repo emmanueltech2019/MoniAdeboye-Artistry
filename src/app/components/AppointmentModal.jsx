@@ -229,7 +229,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
       { name: "Home Session - Magodo (90 Minutes)", price: 70000 },
       { name: "Home Session - Ogudu (90 Minutes)", price: 70000 },
     ],
-    bridal: [{ name: "Bridal makeup", price: 30000 }],
+    bridal: [{ name: "Bridal makeup", price: "Consultation" }],
     training: [{ name: "Makeup Training", price: 120000 }],
   };
 
