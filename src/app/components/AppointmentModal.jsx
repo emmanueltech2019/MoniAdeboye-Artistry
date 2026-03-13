@@ -276,7 +276,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
   if (!isSpecial) {
     messageBody += `Payment: Paid to ${accountDetails.bank} (Receipt Uploaded)\n`;
   } else {
-    messageBody += `Note: Requesting consultation pricing.\n`;
+    messageBody += `Note:Consultation pricing discussion.\n`;
   }
 
   if (completeData.address) {
@@ -305,7 +305,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
         <button onClick={() => { onClose(); setStep(1); }} className="absolute top-6 right-6 text-2xl hover:opacity-60">✕</button>
         
         <h2 className="font-serif text-2xl tracking-widest mb-6 uppercase">
-          {step === 1 ? "Book an Appointment" : "Complete Payment"}
+          {step === 1 ? "Book an Appointment" : "Contiune Converstaion Via Whats'app"}
         </h2>
         {selectedService?.name === "Bridal makeup" || selectedService?.name === 'Makeup for film and TV' ? (
                 <p className="text-xs text-gray-600 mb-8 leading-relaxed max-w-md mx-auto">
