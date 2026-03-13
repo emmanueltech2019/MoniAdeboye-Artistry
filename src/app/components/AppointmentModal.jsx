@@ -243,36 +243,53 @@ const AppointmentModal = ({ isOpen, onClose }) => {
 
   // 2. FIXED: Capture data here before the inputs disappear
   const handleNextStep = (e) => {
-    e.preventDefault();
-    if (!selectedService) return alert("Please select a service");
-    
-    const data = new FormData(e.currentTarget);
-    setFormData(Object.fromEntries(data)); // Save inputs to state
-    setStep(prev => prev + 1);
-  };
+  e.preventDefault();
+  if (!selectedService) return alert("Please select a service");
+  
+  // Capture current visible inputs
+  const data = new FormData(e.currentTarget);
+  const newEntries = Object.fromEntries(data);
+  
+  // Merge with existing formData state
+  setFormData((prev) => ({ ...prev, ...newEntries })); 
+  setStep((prev) => prev + 1);
+};
 
   const handleSubmitFinal = (e) => {
-    e.preventDefault();
-    
-    // 3. FIXED: Use the formData from state instead of e.target
-    let messageBody = `NEW BOOKING REQUEST\n` +
-                      `------------------\n` +
-                      `Service: ${selectedService.name}\n` +
-                      `Name: ${formData.name}\n` +
-                      `Phone: ${formData.phone}\n` +
-                      `Date/Time: ${formData.date} at ${formData.time}\n` +
-                      `Payment: Paid to ${accountDetails.bank} (Receipt Uploaded)`;
+  e.preventDefault();
+  
+  // Capture the final inputs (like the receipt file) if needed
+  const data = new FormData(e.currentTarget);
+  const finalEntries = Object.fromEntries(data);
+  const completeData = { ...formData, ...finalEntries };
 
-    if (formData.address) {
-        messageBody += `\nAddress: ${formData.address}`;
-    }
+  const isSpecial = selectedService?.name === "Makeup for film and TV" || 
+                    selectedService?.name === "Bridal makeup";
 
-    const finalMessage = encodeURIComponent(messageBody);
-    window.open(`https://wa.me/${whatsappNumber}?text=${finalMessage}`, "_blank");
-    onClose();
-    setStep(1);
-    setFormData({}); // Clear data
-  };
+  let messageBody = `NEW BOOKING REQUEST\n` +
+                    `------------------\n` +
+                    `Service: ${selectedService?.name}\n` +
+                    `Name: ${completeData.name || "N/A"}\n` +
+                    `Phone: ${completeData.phone || "N/A"}\n` +
+                    `Date/Time: ${completeData.date} at ${completeData.time}\n`;
+
+  if (!isSpecial) {
+    messageBody += `Payment: Paid to ${accountDetails.bank} (Receipt Uploaded)\n`;
+  } else {
+    messageBody += `Note: Requesting consultation pricing.\n`;
+  }
+
+  if (completeData.address) {
+    messageBody += `Address: ${completeData.address}\n`;
+  }
+
+  const finalMessage = encodeURIComponent(messageBody);
+  window.open(`https://wa.me/${whatsappNumber}?text=${finalMessage}`, "_blank");
+  
+  onClose();
+  setStep(1);
+  setFormData({}); 
+};
 
   const renderPrice = () => {
     if (!selectedService) return "₦0.00";
@@ -290,9 +307,15 @@ const AppointmentModal = ({ isOpen, onClose }) => {
         <h2 className="font-serif text-2xl tracking-widest mb-6 uppercase">
           {step === 1 ? "Book an Appointment" : "Complete Payment"}
         </h2>
+        {selectedService?.name === "Bridal makeup" || selectedService?.name === 'Makeup for film and TV' ? (
+                <p className="text-xs text-gray-600 mb-8 leading-relaxed max-w-md mx-auto">
+            Price will be communicated to you via WhatsApp
+          </p>
+        ) : (
                 <p className="text-xs text-gray-600 mb-8 leading-relaxed max-w-md mx-auto">
             Your booking request has been received. We will contact you shortly after payment confirmation to confirm your appointment time.
           </p>
+        )}
 
         <form className="space-y-4" onSubmit={step === 1 ? handleNextStep : step === 2 ? handleNextStep : handleSubmitFinal}>
           {step === 1 ? (
@@ -398,20 +421,26 @@ const AppointmentModal = ({ isOpen, onClose }) => {
             </div>
           ) : (
             <div className="space-y-6">
-              <div className="bg-gray-100 p-6 rounded-lg text-left border-l-4 border-black">
-                <p className="text-xs uppercase text-gray-500 mb-2">Transfer to the details below:</p>
-                <div className="space-y-2">
-                  <div className="flex justify-between items-center text-sm"><span>Bank:</span><span className="font-bold">{accountDetails.bank}</span></div>
-                  <div className="flex justify-between items-center"><span className="text-sm">Account Number:</span><span className="font-mono font-bold text-lg text-green-700">{accountDetails.number}</span></div>
-                  <div className="flex justify-between items-center text-sm"><span>Account Name:</span><span className="font-bold">{accountDetails.name}</span></div>
-                  <div className="flex justify-between items-center border-t pt-2 mt-2 font-bold text-lg"><span>Total:</span><span>{renderPrice()}</span></div>
-                </div>
-              </div>
+              {selectedService?.name === "Makeup for film and TV" || selectedService?.name === "Bridal makeup" ? (
+                null
+              ) : (
+                <>
+                  <div className="bg-gray-100 p-6 rounded-lg text-left border-l-4 border-black">
+                    <p className="text-xs uppercase text-gray-500 mb-2">Transfer to the details below:</p>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center text-sm"><span>Bank:</span><span className="font-bold">{accountDetails.bank}</span></div>
+                      <div className="flex justify-between items-center"><span className="text-sm">Account Number:</span><span className="font-mono font-bold text-lg text-green-700">{accountDetails.number}</span></div>
+                      <div className="flex justify-between items-center text-sm"><span>Account Name:</span><span className="font-bold">{accountDetails.name}</span></div>
+                      <div className="flex justify-between items-center border-t pt-2 mt-2 font-bold text-lg"><span>Total:</span><span>{renderPrice()}</span></div>
+                    </div>
+                  </div>
 
-              <div className="text-left">
-                <label className="block text-xs font-medium uppercase mb-2">Upload Receipt</label>
-                <input type="file" accept="image/*" required onChange={(e) => setReceipt(e.target.files[0])} className="w-full text-sm" />
-              </div>
+                  <div className="text-left">
+                    <label className="block text-xs font-medium uppercase mb-2">Upload Receipt</label>
+                    <input type="file" accept="image/*" required onChange={(e) => setReceipt(e.target.files[0])} className="w-full text-sm" />
+                  </div>
+                </>
+              )}
 
               <div className="flex gap-4">
                 <button type="button" onClick={() => setStep(2)} className="w-1/3 border border-black py-4 uppercase text-xs">Back</button>
