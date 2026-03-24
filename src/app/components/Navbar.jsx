@@ -50,7 +50,7 @@ const Navbar = ({className}) => {
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about-us' },
     { name: 'Services', href: '/services' },
-    // { name: 'Gallery', href: '/gallery' },
+    { name: 'Training', href: '/training' },
     { name: 'Contact', href: '/contact' },
   ];
 

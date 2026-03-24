@@ -206,19 +206,22 @@ const AppointmentModal = ({ isOpen, onClose }) => {
 
   const serviceCategories = {
     general: [
-      { name: "Makeup for film and TV", price: "Consultation" },
-      { name: "DIY Makeup class (4 Hours)", price: 60000 },
-      { name: "Walk-in Session (75 Minutes)", price: 35000 },
-      { name: "Walk-in Session + Gele (by the makeup artist) (90 Minutes)", price: 40000 },
-      { name: "Walk-in Session + Gele (professional Gele artist) (90 Minutes)", price: 50000 },
-      { name: "Home Session - Yaba (90 Minutes)", price: 55000 },
-      { name: "Home Session - Surulere (90 Minutes)", price: 60000 },
-      { name: "Home Session - Ikeja (90 Minutes)", price: 65000 },
-      { name: "Home Session - Maryland (90 Minutes)", price: 65000 },
-      { name: "Home Session - Lekki 1 (90 Minutes)", price: 80000 },
-      { name: "Home Session - Ikate / Osapa London (90 Minutes)", price: 90000 },
-      { name: "Home Session - Chevron / Lekki 2 (90 Minutes)", price: 100000 },
-      { name: "Home Session - VGC (90 Minutes)", price: 100000 },
+      // DIY CLASS
+      { name: "DIY Makeup Class (4 Hours)", price: 60000 },
+  
+      // WALK-IN
+      { name: "Walk-in Session (75 Minutes)", price: 40000 },
+      { name: "Walk-in Session + Gele (by the makeup artist) (90 Minutes)", price: 45000 },
+      { name: "Walk-in Session + Gele (professional Gele artist) (90 Minutes)", price: 55000 },
+      { name: "Home Session - Yaba (90 Minutes)", price: 60000 },
+      { name: "Home Session - Surulere (90 Minutes)", price: 65000 },
+      { name: "Home Session - Ikeja (90 Minutes)", price: 70000 },
+      { name: "Home Session - Maryland (90 Minutes)", price: 70000 },
+      { name: "Home Session - Lekki 1 (90 Minutes)", price: 90000 },
+      { name: "Home Session - Ikate / Osapa London (90 Minutes)", price: 100000 },
+      { name: "Home Session - Chevron / Orchid (90 Minutes)", price: 110000 },
+      { name: "Home Session - VGC (90 Minutes)", price: 120000 },
+  
       { name: "Home Session - Ago (90 Minutes)", price: 70000 },
       { name: "Home Session - FESTAC (90 Minutes)", price: 70000 },
       { name: "Home Session - Ojodu Berger (90 Minutes)", price: 70000 },
@@ -229,10 +232,11 @@ const AppointmentModal = ({ isOpen, onClose }) => {
       { name: "Home Session - Magodo (90 Minutes)", price: 70000 },
       { name: "Home Session - Ogudu (90 Minutes)", price: 70000 },
     ],
-    bridal: [{ name: "Bridal makeup", price: "Consultation" }],
-    training: [{ name: "Makeup Training", price: 120000 }],
+  
+    training: [
+      { name: "Makeup Training", price: 120000 },
+    ],
   };
-
   const isHomeService = selectedService?.name?.toLowerCase().includes("home session");
 
   const handleServiceChange = (e) => {
