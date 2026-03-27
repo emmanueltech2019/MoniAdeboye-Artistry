@@ -173,7 +173,7 @@ const TrainingPage = () => {
             <p className='font-sans tracking-wide uppercase text-sm'>Lagos, Nigeria · Limited slots available per cohort</p>
             <h3 className='font-philosopher text-2xl mb-6'>Ready to elevate your artistry?</h3>
             <a 
-              href="https://wa.me/2349076516441" 
+              href="https://wa.me/2348104505065" 
               target="_blank" 
               className='bg-black text-white px-10 py-4 font-philosopher text-lg hover:bg-zinc-800 transition-all inline-block'
             >

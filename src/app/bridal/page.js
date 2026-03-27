@@ -161,7 +161,7 @@ const BridalPage = () => {
             </div>
 
             <a
-              href="https://wa.me/2349076516441"
+              href="https://wa.me/2348104505065"
               target="_blank"
               className="block mt-6 text-center bg-black text-white py-3 rounded-md hover:opacity-90 transition font-sans"
             >
